@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+#body{
+    font-family: sans-serif !important;
+}
+.btn-success{
+    background: rgb(17, 139, 99) !important;
+}
+.badge{
+    display: none;
+}
+.myColor{
+    transition: all 1s;
+    background: rgb(3, 3, 17)!important ;
+}
+.bgColor{
+    transition: all 1s;
+    background-color: rgb(18, 18, 31);
+}
+.new{
+    background-color: #e91e63!important;
+}
+.myWhite{
+    background: rgb(255, 255, 255) ;
+}
+.middle{
+    transition: all 1s;
+    background: rgb(222, 222, 223);
+}
+h5{
+    margin: auto;
+    margin-top: 20px;
+    color: rgb(17, 139, 99);
+    font-weight: lighter;
+    font-size: 16px;
+    font-family: sans-serif !important;
+}
+.blue-text{
+    color: rgb(17, 139, 99)!important;
+    font-weight: lighter!important;
+    font-size: 14px;
+}
+.fa-magic,.fa-signal,.fa-pen,.fa-store,.fa-truck,.fa-tasks{
+    color: #ec407a !important;
+}
+.fa-store,.fa-truck,.fa-tasks{
+    margin-bottom: 10px;
+}
+.fa-linkedin-in{
+    color: mediumturquoise !important;
+}
+.fa-twitter{
+    color: lightskyblue !important;
+}
+.fa-facebook-f{
+    color: rgb(95, 89, 152) !important;
+}
+.view-cascade{
+    border-bottom: 1px solid rgb(17, 139, 99);
+}
+.card{
+    margin: 5px auto!important;
+    padding: 30px !important;
+}
+.card-text{
+    color: gray !important;
+    font-size: 12px !important;
+    font-weight: lighter !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.outer{
+    color: rgb(17, 139, 99);
+    font-size: 14px;
+    font-weight: lighter;
+}
+.inner{
+    color: gray;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.why{
+    margin-left: 5px;
+}
+.c{
+    position: absolute;
+    width: 100%;
+}
+.c.ng-enter{
+    opacity: 0;
+    transition: all 0.5s;
+}
+.c.ng-enter-active{
+    opacity: 1;
+}
+.c.ng-leave{
+    opacity: 1;
+    transition: all 0.5s;
+}
+.c.ng-leave-active{
+    opacity: 0;
+}
