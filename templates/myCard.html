@@ -1,0 +1,49 @@
+<md-dialog aria-label="Mango (Fruit)"  style="background-color: {{dark}};border-radius: 0">
+  <form ng-cloak>
+    <md-toolbar style="background-color: {{dark}}">
+      <div class="md-toolbar-tools">
+        <h5>Your Purchases</h5>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <i class="fa fa-times" style="color: red;"></i>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+ 
+        <table class="table" style="color: {{dark3}}" ng-init=total>
+          <tr style="color:  rgb(17, 139, 99);">
+            <th>No.</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Quantity</th>
+            <th>Total price</th>
+          </tr>
+          <tr ng-repeat='Purchase in myPurchases'>
+            <td>{{$index+1}} </td>
+            <td>{{Purchase.name}}</td>
+            <td>
+              <img src="{{Purchase.img}}" alt="" width="64px">
+            </td>
+            <td class="text-center">{{Purchase.qty}}</td>
+            <td style="color: limegreen">{{total = Purchase.price * Purchase.qty|currency}}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="text-center" style="color:  red;"> total</td>
+            <td style="color: limegreen">{{tot|currency}}</td>
+          </tr>
+        </table>
+
+    </md-dialog-content>
+
+      <md-dialog-actions layout="row">
+        <span flex></span>
+        <button class="btn btn-success btn-block" ng-click="cancel()"><small> ok</small>
+        </button>
+      </md-dialog-actions>
+  </form>
+</md-dialog>
