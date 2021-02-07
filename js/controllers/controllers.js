@@ -23,7 +23,7 @@ angular
             .parent(angular.element(document.querySelector("#popupContainer")))
             .clickOutsideToClose(false)
             .title("Done")
-            .textContent("The Item Added Successfully.")
+            .textContent("The Item Added Successfully To The Cart.")
             .ariaLabel("Alert Dialog Demo")
             .ok("O.K!")
             .targetEvent(ev)
