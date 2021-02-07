@@ -246,8 +246,8 @@ angular
         {
           Name: "Captin",
           img: "../img/red sport 2/1.jpg",
-          img2: "../img2/red sport 2/2.jpg",
-          img3: "../img3/red sport 2/3.jpg",
+          img2: "../img/red sport 2/2.jpg",
+          img3: "../img/red sport 2/3.jpg",
           price: 1000,
           likes: 20,
           myRed: "gray",
