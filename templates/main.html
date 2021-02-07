@@ -1,0 +1,97 @@
+<!--Main Navigation-->
+<header>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+    <a class="navbar-brand" href="#"> <img src="../img/3-2-nike-logo-png.png" style="width: 50px;height: 20px;" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="app.home" ng-click='numb()'>Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="app.store" ng-click='numb1()'>Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="app.contact">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link myRight" ng-click="showAdvanced2($ev)"><span class="badge" style="background: rgb(21, 117, 21) !important;">{{num}}</span><i class="fa fa-shopping-cart fcart"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link c" ng-show="!logined" ng-click='change();logined=true'><i class="fa fa-moon"></i></a>
+          <a class="nav-link c" ng-show="logined" ng-click='unChange();logined=false'><i  class="fa fa-sun"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+<!--Main Navigation-->
+<section style="margin-top: 60px">
+  <div ui-view="sub"></div>
+</section>
+<!-- Footer -->
+<footer class="page-footer font-small  new">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row" style="height: 100px;">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="font-size: 14px;font-weight: lighter;">© 2021 Copyright 
+    <a href="#"> Seeda <strong>Ink</strong></a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
